@@ -74,7 +74,7 @@ class _LoginPageState extends State<LoginPage>
                       width: 250.0,
                       height: 191.0,
                       fit: BoxFit.fill,
-                      image: new AssetImage('assets/img/dog.png')),
+                      image: new AssetImage('assets/img/dog2.png')),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 20.0),
