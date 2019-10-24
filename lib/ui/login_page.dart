@@ -54,27 +54,16 @@ class _LoginPageState extends State<LoginPage>
             height: MediaQuery.of(context).size.height >= 775.0
                 ? MediaQuery.of(context).size.height
                 : 775.0,
-            decoration: new BoxDecoration(
-              gradient: new LinearGradient(
-                  colors: [
-                    Theme.Colors.loginGradientStart,
-                    Theme.Colors.loginGradientEnd
-                  ],
-                  begin: const FractionalOffset(0.0, 0.0),
-                  end: const FractionalOffset(1.0, 1.0),
-                  stops: [0.0, 1.0],
-                  tileMode: TileMode.clamp),
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: new AssetImage('assets/img/dog2.jpg'),
+                  fit: BoxFit.cover),
             ),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.only(top: 75.0),
-                  child: new Image(
-                      width: 250.0,
-                      height: 191.0,
-                      fit: BoxFit.fill,
-                      image: new AssetImage('assets/img/dog2.png')),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 20.0),
